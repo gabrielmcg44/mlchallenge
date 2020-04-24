@@ -1,5 +1,6 @@
 # 3778's Machine Learning Challenge, My Solutions
 
+
 # Dataset
   The dataset consists of a time-series of several economic and health indicators of the last four decades (beginning from the 80s) from hundreds of countries. The train set has no data for the years of 2013, 2014 and 2015 and the indicators behaved as shown below:
  
@@ -15,6 +16,8 @@
   As you can see, the linar function is a good aproximation, but probably not the bast performance.
   The evaluations metrics for the linear regression were:
   
+  
+  
 # Second Approach: Third Degree Polinomial Regression
   Since the behaving of the indicators are not exactly straight, the polinomial regression has been used. It is natural that this approach performs better than the previous one, since the linear regression is a particular case of the Third Degree Polinomial Regression. One of the N regressions can be seen below:
   
@@ -22,6 +25,12 @@
   
   Which give us a better fit than the first approach.
   The evaluations metrics for the third degree polinomial regression were:
+  
+  **'explained_variance_score'**: 0.9998887956037842, 
+  **'mean_absolute_error'**: 104181.80498666546, 
+  **'mean_squared_error'**: 1114102924817.4478, 
+  **'median_absolute_error'**: 3.2352767572156154, 
+  **'r2_score'**: 0.9998887135449601
   
 
 ## Dependencies
