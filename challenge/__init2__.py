@@ -65,8 +65,8 @@ class regression_model(object):
         return self.y_pred
 
 
-data = pd.read_csv('data/data_reduced.csv')
-test = pd.read_csv('data/test_reduced.csv')
+data = pd.read_csv('data/data.csv')
+test = pd.read_csv('data/test.csv')
 
 model = regression_model()
 model.train_my_model(data)
