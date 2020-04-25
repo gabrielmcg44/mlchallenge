@@ -14,7 +14,18 @@
   ![](/linear_regression.png)
   
   As you can see, the linar function is a good aproximation, but probably not the bast performance.
+  
   The evaluations metrics for the linear regression were:
+  
+  **'explained_variance_score'**: 0.9982057657224324, 
+  
+  **'mean_absolute_error'**: 370659.0074495327, 
+  
+  **'mean_squared_error'**: 17963468094906.824, 
+  
+  **'median_absolute_error'**: 5.447516541841395, 
+  
+  **'r2_score'**: 0.9982056499090223
   
   
   
@@ -24,12 +35,17 @@
   ![](/polynomial_regression.png)
   
   Which give us a better fit than the first approach.
+  
   The evaluations metrics for the third degree polinomial regression were:
   
   **'explained_variance_score'**: 0.9998887956037842, 
-  **'mean_absolute_error'**: 104181.80498666546, 
-  **'mean_squared_error'**: 1114102924817.4478, 
+  
+  **'mean_absolute_error'**: 104181.80498666546,
+  
+  **'mean_squared_error'**: 1114102924817.4478,
+  
   **'median_absolute_error'**: 3.2352767572156154, 
+  
   **'r2_score'**: 0.9998887135449601
   
 
