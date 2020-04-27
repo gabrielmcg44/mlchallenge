@@ -48,6 +48,39 @@
   
   **'r2_score'**: 0.9998887135449601
   
+# How to use the model
+
+## 1.Train it from the beginning:
+
+```python
+data = pd.read_csv('data/data.csv')
+
+test = pd.read_csv('data/test.csv')
+
+model = regression_model()
+
+model.train_my_model(data)
+
+pickle.dump(model,open("model_polynomial","wb"))  #saves the model for future usage
+
+y_pred = model.predict(test)
+
+metrics = evaluate.evaluate_regression(y_pred)
+```
+
+## 2. Use an already trainned model:
+
+```python
+data = pd.read_csv('data/data.csv')
+
+test = pd.read_csv('data/test.csv')
+
+model = pickle.load(open("model_polynomial","rb"))
+
+y_pred = model.predict(test)
+
+metrics = evaluate.evaluate_regression(y_pred)
+```
 
 ## Dependencies
 - Python 3.6 or superior
